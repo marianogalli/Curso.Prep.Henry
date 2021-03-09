@@ -1,0 +1,30 @@
+Variables:
+Son espacios en memoria que se utilizan para guardar datos que luego se usan para alguna tarea.
+Para declararlas se pueden utilizar las palabras var, let o const. En javascript no hace falta
+especificar el tipo de dato que va a almacenar.  
+
+Strings:
+Es un tipo de dato, el cual almacena cadena de caracteres. Por ejemplo "hola me llamo mariano"
+
+Funciones:
+Son fragmentos de código que realizan tareas que por lo general se hacen con frecuencia.
+En ocasiones reciben argumentos (o parámetros) y pueden retornar valores. 
+Se declaran con la palabra reservada "function". Ejmeplo:
+
+function escribirNombre(nombre){
+    return 'Hola '+nombre;
+}
+
+Declaraciones if:
+Es un tipo de sentencia que sirve para evaluar condiciones y bifurcar la ejecución del 
+código según corresponda. Por ejemplo, si para aplicar un descuento en una venta tengo que saber
+si el monto de la misma es mayor a los $100, puedo hacer lo siguiente:
+
+if(montoVenta>100){
+    //aplicar descuento
+}else{
+    //no aplicar descuento
+}
+
+Valores Booleanos
+Son un tipo de datos que presentan dos estados posibles true (verdadero) y false (falso). Se 
