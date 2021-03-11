@@ -1,0 +1,31 @@
+FOR:
+Es una sentencia que se utiliza para ejecutar una tarea de manera repetitiva una cierta
+cantidad de veces. Por ejemplo si quisiera escribir la palabra "Hola" 10 veces, utilizo
+un ciclo FOR a la que configuro ciertos valores para escribir la palabra hola 10 veces
+
+&&
+Es un operador lógico que significa "y" que se utiliza cuando para ejecutar algo (o no) 
+es necesario que se cumplan (o no) sí o sí dos o más condiciones. Por ejemplo, si quisiera
+aplicar un descuento a personas mayores de 50 años que hayan comprado por más de $500,
+ utilizaría un operador && de esta forma:
+ 
+ if(monto=>500 && edad=>50)
+    aplicar descuento
+
+
+||
+Es un operador lógico que significa "o". Se utiliza para evaluar la veracidad de una condición.
+Por ejemplo, si quisiera aplicar un descuento si la compra fue mayor a $1000 o si el pago es en
+efectivo, utilizaría este operador. En este caso, cumpliendo cualquier condición, aplica 
+descuento de esta manera:
+
+if(monto=>1000 || pago==="efectivo")
+    aplicar descuento
+
+
+!
+Es un operador de negación. Lo utilizo para negar la condición que estoy evaluando. Por ejemplo,
+si quiero aplicar un descuento cuando NO se pague con tarjeta, lo haría de esta forma:
+
+if(pago!=="tarjeta")
+    aplicar descuento
