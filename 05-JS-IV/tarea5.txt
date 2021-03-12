@@ -1,0 +1,62 @@
+Objetos:
+Son tipos de datos que almacenan información sobre algo determinado. Por ejemplo: 
+se puede crear un objeto Persona que contenga información sobre una persona como nombre,
+apellido, edad, domicilio, email, etc. Los objetos pueden almacenar distintos tipos de datos
+como string, enteros, arrays e incluso otros objetos. En javascript existen objetos nativos 
+como por ejemplo Math. A continuación un ejemplo de objeto en javascript:
+
+const Persona={
+    nombre: 'Mariano',
+    edad:28,
+    país:'Argentina',
+    estudiante:true
+}
+
+
+Propiedades:
+Las propiedades son los atributos que posee el objeto. En el ejemplo anterior, las propiedades 
+serían el nombre, la edad, el país y si es estudiante. Un objeto puede tener tantas propiedades
+como sea necesario. 
+
+Métodos:
+Representan un comportamiento que caracteriza al objeto. En el ejemplo del objeto persona, este 
+podría tener un método que sea hablar. El método es una función a la que se puede llamar 
+únicamente desde el objeto. ejemplo:
+
+Persona.hablar=function(){
+    console.log('Asi habla una persona')
+}
+
+De esta manera queda definido el método. Para llamarlo, lo hago de esta manera:
+
+Persona.hablar()
+
+
+Bucle for...in:
+Se utiliza para iterar sobre todas las propiedades de un objeto. Por ejemplo, siguiendo con
+el objeto persona, podría hacer lo siguiente:
+
+for(let clave in Persona){
+    console.log(Persona[clave])
+}
+
+y me mostraría por pantalla:
+'Mariano'
+28
+'Argentina'
+true
+
+Notación de puntos vs notación de corchetes:
+Se utilizan para acceder a las propiedades de un objeto. Si bien no hay una mejor que otra,
+se pueden usar para casos distintos.
+Ejemplo: si tengo una función para acceder a cualquier propiedad de un objeto que elija el 
+usuario, puedo hacer lo siguiente:
+
+function accederPropiedad(objeto, propiedad){
+    return objeto[propiedad];
+}
+
+accederPropiedad(Persona,nombre)
+
+y me devolvería el nombre de la Persona, en este caso 'Mariano'.
+
