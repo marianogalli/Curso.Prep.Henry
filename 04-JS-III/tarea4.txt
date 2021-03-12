@@ -1,0 +1,7 @@
+Arrays
+Son una estructura de datos que sirven para almacenar disintos elementos dentro. En javascript, 
+al ser un lenguaje que no especifica tipos de datos, los arrays pueden contener elementos de 
+cualquier tipo, por ejemplo números, letras, objetos, booleanos, etc.
+Ejemplo:
+
+let array=['Hola',1,true,false,2,'javascript']
