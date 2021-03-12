@@ -1,0 +1,16 @@
+Funciones callback:
+
+Son funciones que se pasan como parámetro a otras funciones y se llaman dentro del cuerpo de la 
+misma. Por ejemplo:
+
+function saludar(nombre,saludo){
+    saludo(nombre)
+}
+
+function decirHola(nombre){
+    return `Hola ${nombre}`
+}
+
+
+saludar("Mariano",decirHola);
+
