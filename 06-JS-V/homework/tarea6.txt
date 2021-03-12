@@ -1,0 +1,33 @@
+Prototype:
+Es una manera de utilizar herencia en javascript. Básicamente sirve para reutilizar código, 
+pudiendo crear objetos a partir de clases "padres". Por ejemplo:
+
+function Persona(nombre,apellido){
+    this.nombre=nombre,
+    tihs.apellido=apellido
+}
+
+si quisiera que todos los objetos que vaya a crear de este tipo tengan un metodo para mostrar
+sus datos, lo podría hacer de la siguiente manera:
+
+Persona.prototype.mostrarDatos=function(){
+    return this.nombre+' '+this.apellido;
+}
+
+
+Contructors:
+El método constructor es el método que permite crear nuevas instancias de una clase.
+Para invocarlo se utiliza la palabra reservada "new" y el nombre del método. Por ejemplo:
+
+class Mascota{
+    constructor(nombre,tipo){
+        this.nombre=nombre,
+        this.tipo=tipo
+    }
+}
+
+para crear una nueva mascota, hago lo siguiente:
+
+mascota m=new Mascota();
+
+De esta forma, utilizando el operador new, accedo al constructor de la clase mascota. 
